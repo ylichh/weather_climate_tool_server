@@ -8,7 +8,7 @@
             "name": "Python Debugger: main",
             "type": "debugpy",
             "request": "launch",
-            "program": "main.py",
+            "program": "main_emitter.py",
             "console": "integratedTerminal"
         },
         {
