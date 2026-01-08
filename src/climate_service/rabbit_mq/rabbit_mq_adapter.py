@@ -54,7 +54,7 @@ class RabbitMqController:
         return self.weather_service.available_cities()
 
     def get_climate_handler(self, body):
-        ciudad = body["ciudad"]
+        ciudad = body["ciudad"].lower()
         return self.weather_service.obtain_climate_information(ciudad)
 
     def default_handler(self):
